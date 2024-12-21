@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuphony EEG Headband</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/xzoom/dist/xzoom.css">
+    <link href="css/style.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <div class="container-fluid">
+    <!--Header start-->
+    <header class="bg-light custom-shadow">
+        <div class="mobile-view">
+          <!-- Desktop Logo -->
+          <div class="desktop-logo">
+            <!-- <img src="eeg-images/logo.svg" alt="Logo" style="height: 60px;"> Logo -->
+            <svg
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 243.913 235.792"
+            xmlns="http://www.w3.org/2000/svg"
+            data-type="ugc"
+            role="presentation"
+            aria-hidden="true"
+            style="height: 100px; width: 165px; object-fit: contain;">
+            <g>
+              <g opacity=".86">
+                <path
+                  strokeWidth=".5"
+                  strokeMiterlimit="10"
+                  stroke="#e9b00d"
+                  fill="#e9b00d"
+                  d="M139.358 159.816s5.42-26.187 27.014-38.576a13.973 13.973 0 0 0 4.065-3.52l23.864-30.639a11.721 11.721 0 0 1 12.02-4.417c4 1 7.321 4.083 4.681 12.319-5.28 16.6-22.368 36.711-22.368 36.711s.51 6.036 4.769 1.513 18.549-27.665 18.549-27.665l7.515-14.255a11.879 11.879 0 0 0 1.32-4.417l2.534-26.574 2.816-17.282a9.292 9.292 0 0 1 2.851-5.4c3.52-3.238 10.066-7.039 13.445 5.086 3.8 13.6-2.921 53.87-5.808 69.691a29.2 29.2 0 0 1-5.086 11.862c-8.06 11.087-27.208 36.8-42.659 52.444v21.858a2.992 2.992 0 0 1-2.992 2.992h-42.8a1.531 1.531 0 0 1-1.549-1.426z"></path>
+                <path
+                  strokeWidth=".5"
+                  strokeMiterlimit="10"
+                  stroke="#e9b00d"
+                  fill="#e9b00d"
+                  d="M214.522 76.345s2.517-29.671 4.277-34.951-10.804 5.28-9.556 32.188z"></path>
+                <path
+                  strokeWidth=".5"
+                  strokeMiterlimit="10"
+                  stroke="#e9b00d"
+                  fill="#e9b00d"
+                  d="M202.713 73.071s3.114-18.936 4.523-21.611-7.8-2.27-10.049 21.611z"></path>
+                <path
+                  strokeWidth=".5"
+                  strokeMiterlimit="10"
+                  stroke="#e9b00d"
+                  fill="#e9b00d"
+                  d="M104.568 159.816s-5.438-26.187-27.032-38.576a13.9 13.9 0 0 1-4.048-3.52L49.625 86.991a11.738 11.738 0 0 0-12.038-4.417c-3.977 1-7.321 4.083-4.681 12.319 5.28 16.6 22.386 36.711 22.386 36.711s-.51 6.089-4.787 1.549-18.532-27.647-18.532-27.647l-7.519-14.255a11.879 11.879 0 0 1-1.32-4.417L20.587 60.26l-2.8-17.282a9.38 9.38 0 0 0-2.851-5.4c-3.52-3.238-10.066-7.039-13.445 5.086-3.784 13.6 2.9 53.87 5.808 69.691a28.967 28.967 0 0 0 5.086 11.862c8.06 11.087 27.208 36.8 42.642 52.444v21.858a3.009 3.009 0 0 0 3.009 2.992h42.783a1.531 1.531 0 0 0 1.566-1.426z"></path>
+                <path
+                  strokeWidth=".5"
+                  strokeMiterlimit="10"
+                  stroke="#e9b00d"
+                  fill="#e9b00d"
+                  d="M29.387 76.345s-2.52-29.671-4.277-34.951 10.823 5.28 9.556 32.188z"></path>
+                <path
+                  strokeWidth=".5"
+                  strokeMiterlimit="10"
+                  stroke="#e9b00d"
+                  fill="#e9b00d"
+                  d="M41.213 73.071S38.186 54.135 36.69 51.46s7.78-2.27 10.049 21.611z"></path>
+                <path
+                  strokeWidth=".5"
+                  strokeMiterlimit="10"
+                  stroke="#e9b00d"
+                  fill="#e9b00d"
+                  d="M131.695 13.481l10.313 10.93c8.623-9.169 22-9.609 29.407-2.745a18.567 18.567 0 0 1 3.52 22.368c-4.8 8.166-16.367 11.4-26.011 6.16a196.508 196.508 0 0 1-28.915-27.278 110.45 110.45 0 0 0-18.478-17.477c-2.165-1.619-3.96-2.165-8.923-3.766-8.5-2.728-19.587-.9-28.281 5.28a34.757 34.757 0 0 0-13.586 36.711 34.687 34.687 0 0 0 26.521 24.638c11.07 2.217 23.723-1.021 30.939-9.063a28.172 28.172 0 0 0 1.883-2.393L99.257 45.529c-.422.581-6.776 8.9-16.842 8.166a18.954 18.954 0 0 1-17.331-17.722 18.831 18.831 0 0 1 13.2-18.6 19.851 19.851 0 0 1 20.1 5.913c5.192 5.385 8.553 7.884 23.142 23 5.86 6.089 5.614 5.79 6.916 7.039 5.438 5.28 10.348 9.943 16.719 12.565 12.618 5.28 25.272-.141 26.644-.757a34.969 34.969 0 0 0 17.352-16.6c.6-1.267 7.48-16.3-.757-31.044A34.7 34.7 0 0 0 151.811.916a35.391 35.391 0 0 0-20.116 12.565z"></path>
+              </g>
+            </g>
+            <text 
+              x="-45"
+              y="235"
+              style="font-size: 35px;"
+              textAnchor="middle"                
+              fill="#e9b00d"
+              fontFamily="Arial, sans-serif">
+              Ten Brain Research
+            </text>
+          </svg>
+          </div>
+        
+        
+            
+          <nav class="navbar navbar-expand-lg navbar-light mt-5">
+            <!-- <div class="container-fluid"> -->
+              <!-- Mobile Logo (hidden on larger screens) -->
+              <a class="navbar-brand d-lg-none" href="#">
+                <!-- <img src="eeg-images/logo.svg" alt="Logo" style="height: 40px;"> -->
+                <svg
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 243.913 235.792"
+              xmlns="http://www.w3.org/2000/svg"
+              data-type="ugc"
+              role="presentation"
+              aria-hidden="true"
+              style="height: 100px; width: 84px; object-fit: contain;">
+              <g>
+                <g opacity=".86">
+                  <path
+                    strokeWidth=".5"
+                    strokeMiterlimit="10"
+                    stroke="#e9b00d"
+                    fill="#e9b00d"
+                    d="M139.358 159.816s5.42-26.187 27.014-38.576a13.973 13.973 0 0 0 4.065-3.52l23.864-30.639a11.721 11.721 0 0 1 12.02-4.417c4 1 7.321 4.083 4.681 12.319-5.28 16.6-22.368 36.711-22.368 36.711s.51 6.036 4.769 1.513 18.549-27.665 18.549-27.665l7.515-14.255a11.879 11.879 0 0 0 1.32-4.417l2.534-26.574 2.816-17.282a9.292 9.292 0 0 1 2.851-5.4c3.52-3.238 10.066-7.039 13.445 5.086 3.8 13.6-2.921 53.87-5.808 69.691a29.2 29.2 0 0 1-5.086 11.862c-8.06 11.087-27.208 36.8-42.659 52.444v21.858a2.992 2.992 0 0 1-2.992 2.992h-42.8a1.531 1.531 0 0 1-1.549-1.426z"></path>
+                  <path
+                    strokeWidth=".5"
+                    strokeMiterlimit="10"
+                    stroke="#e9b00d"
+                    fill="#e9b00d"
+                    d="M214.522 76.345s2.517-29.671 4.277-34.951-10.804 5.28-9.556 32.188z"></path>
+                  <path
+                    strokeWidth=".5"
+                    strokeMiterlimit="10"
+                    stroke="#e9b00d"
+                    fill="#e9b00d"
+                    d="M202.713 73.071s3.114-18.936 4.523-21.611-7.8-2.27-10.049 21.611z"></path>
+                  <path
+                    strokeWidth=".5"
+                    strokeMiterlimit="10"
+                    stroke="#e9b00d"
+                    fill="#e9b00d"
+                    d="M104.568 159.816s-5.438-26.187-27.032-38.576a13.9 13.9 0 0 1-4.048-3.52L49.625 86.991a11.738 11.738 0 0 0-12.038-4.417c-3.977 1-7.321 4.083-4.681 12.319 5.28 16.6 22.386 36.711 22.386 36.711s-.51 6.089-4.787 1.549-18.532-27.647-18.532-27.647l-7.519-14.255a11.879 11.879 0 0 1-1.32-4.417L20.587 60.26l-2.8-17.282a9.38 9.38 0 0 0-2.851-5.4c-3.52-3.238-10.066-7.039-13.445 5.086-3.784 13.6 2.9 53.87 5.808 69.691a28.967 28.967 0 0 0 5.086 11.862c8.06 11.087 27.208 36.8 42.642 52.444v21.858a3.009 3.009 0 0 0 3.009 2.992h42.783a1.531 1.531 0 0 0 1.566-1.426z"></path>
+                  <path
+                    strokeWidth=".5"
+                    strokeMiterlimit="10"
+                    stroke="#e9b00d"
+                    fill="#e9b00d"
+                    d="M29.387 76.345s-2.52-29.671-4.277-34.951 10.823 5.28 9.556 32.188z"></path>
+                  <path
+                    strokeWidth=".5"
+                    strokeMiterlimit="10"
+                    stroke="#e9b00d"
+                    fill="#e9b00d"
+                    d="M41.213 73.071S38.186 54.135 36.69 51.46s7.78-2.27 10.049 21.611z"></path>
+                  <path
+                    strokeWidth=".5"
+                    strokeMiterlimit="10"
+                    stroke="#e9b00d"
+                    fill="#e9b00d"
+                    d="M131.695 13.481l10.313 10.93c8.623-9.169 22-9.609 29.407-2.745a18.567 18.567 0 0 1 3.52 22.368c-4.8 8.166-16.367 11.4-26.011 6.16a196.508 196.508 0 0 1-28.915-27.278 110.45 110.45 0 0 0-18.478-17.477c-2.165-1.619-3.96-2.165-8.923-3.766-8.5-2.728-19.587-.9-28.281 5.28a34.757 34.757 0 0 0-13.586 36.711 34.687 34.687 0 0 0 26.521 24.638c11.07 2.217 23.723-1.021 30.939-9.063a28.172 28.172 0 0 0 1.883-2.393L99.257 45.529c-.422.581-6.776 8.9-16.842 8.166a18.954 18.954 0 0 1-17.331-17.722 18.831 18.831 0 0 1 13.2-18.6 19.851 19.851 0 0 1 20.1 5.913c5.192 5.385 8.553 7.884 23.142 23 5.86 6.089 5.614 5.79 6.916 7.039 5.438 5.28 10.348 9.943 16.719 12.565 12.618 5.28 25.272-.141 26.644-.757a34.969 34.969 0 0 0 17.352-16.6c.6-1.267 7.48-16.3-.757-31.044A34.7 34.7 0 0 0 151.811.916a35.391 35.391 0 0 0-20.116 12.565z"></path>
+                </g>
+              </g>
+              <text 
+                x="-1"
+                y="235"
+                style="font-size: 25px;"
+                textAnchor="middle"                
+                fill="#e9b00d"
+                fontFamily="Arial, sans-serif">
+                Ten Brain Research
+              </text>
+                </svg>
+              </a>
+              <!-- Toggler for mobile view -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Navbar Menu -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <!-- Main Menu -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle bright-text" href="#" id="mainMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Products
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="mainMenu">
+                    <!-- Brain Wearables ▸ -->
+                    <li class="dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="#" id="submenu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Brain Wearables
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="submenu2">
+                        <li><a class="dropdown-item" href="#">Neuphony Headband</a></li>
+                        <li><a class="dropdown-item" href="#">Neuphony EEG Flex Cap</a></li>
+                      </ul>
+                    </li>
+                    <!-- Softwares ▸ -->
+                    <li class="dropdown">
+                        <a class="dropdown-item dropdown-toggle" href="#" id="submenu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Softwares
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="submenu2">
+                          <li><a class="dropdown-item" href="#">Neuphony Mobile Application</a></li>
+                          <li><a class="dropdown-item" href="#">Neuphony Desktop Application</a></li>
+                        </ul>
+                      </li>
+                      <!--Biofeedback Developer Kits ▸ -->
+                    <li class="dropdown">
+                        <a class="dropdown-item dropdown-toggle" href="#" id="submenu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Biofeedback Developer Kits 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="submenu2">
+                          <li><a class="dropdown-item" href="#">Neuphony EXG Synapse</a></li>
+                        </ul>
+                      </li>
+                  </ul>
+                </li>
+                <!--How It Works-->
+                <li class="nav-item">
+                    <a class="nav-link bright-text" href="#" id="mainMenu" role="button" aria-expanded="false">
+                      How It Works
+                    </a>
+                </li>
+                <!--Blog-->
+                <li class="nav-item">
+                    <a class="nav-link bright-text" href="#" id="mainMenu" role="button" aria-expanded="false">
+                      Blog
+                    </a>
+                </li>
+              </ul>
+            </div>
+            <!-- </div> -->
+          </nav>
+          </div>
+      </header>
+    <!--Header end-->
+
+    <!--main start-->
+    <!--Banner start-->
+        <div class="bg-black text-white">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="eeg-images/headbandbanners.png" width="100%">
+                </div>
+            </div>
+            <!--feedback therapy start-->
+            <div class="row therapy-simplified mt-4">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-6 feedback-text">
+                            <h5>Neurofeedback therapy simplified</h5>
+                            <h5> with Neuphony</h5>
+                            <h6>Track your cognitive insights, experience neurofeedback at</h6>
+                            <h6>home, and improve your brain health.</h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-2 ms-3" style="margin-right: 25px;">
+                                    <img src="eeg-images/step1.webp" height="100">
+                                </div>
+                                <div class="col-sm-8 ms-3 me=3">
+                                    <h5>Step 1: Measure Your Brain Activity</h5>
+                                    <h6 class="me-3">put on the Ten Brain Research headband, connect to our app, and start tracking your brain's performance in real-time</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-sm-2 ms-3" style="margin-right: 25px;">
+                                    <img src="eeg-images/step2.webp" height="100">
+                                </div>
+                                <div class="col-sm-8 ms-3">
+                                    <h5>Step 2: Neurofeedback therapy</h5>
+                                    <h6 class="me-3">Engage with neurofeedback games to enhance your cognitive abilities. Monitor insights on focus, calm, mood, and PDR boost your brain activity</h6>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-sm-2 ms-3" style="margin-right: 25px;">
+                                    <img src="eeg-images/step3.webp " height="100">
+                                </div>
+                                <div class="col-sm-8 ms-3">
+                                    <h5>Step 3: Track and Improve</h5>
+                                    <h6 class="me-3">Pair your headband with the mobile app for performance scores or the desktop app for detailed reports, including EEG data and cognitive insights.</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <!--feedback therapy end-->
+
+            <!--Product Information start-->
+            <div class="row mt-3">
+                <div class="col-sm-2"></div>        
+                <div class="col-sm-8">
+                    <h3><p style="text-align: center;"><B>Ten Brain Research Product Information</B></p></h3>
+                </div>
+                <div class="col-sm-2"></div>
+
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 mt-5">
+                    <div class="row">
+                        <div class="col-sm-6">
+                          <section id="default" class="padding-top0">
+                            <div class="row">
+                              <!-- <div class="large-12 column"><h3>Product Zooming</h3></div> -->
+                                <!-- <hr> -->
+                              <div class="large-5 column">
+                                <div class="xzoom-container">
+                                  <img class="xzoom product-information-img" id="xzoom-default" src="eeg-images/headband/headband1.webp" xoriginal="eeg-images/headband/headband1.webp" />
+                                  <div class="xzoom-thumbs">
+                                    <a href="eeg-images/headband/headband1.webp">
+                                      <img class="xzoom-gallery" width="80" src="eeg-images/headband/headband1.webp"  xpreview="eeg-images/headband/headband2.webp" title="The description goes here">
+                                    </a>
+                                      
+                                    <a href="eeg-images/headband/headband2.webp">
+                                      <img class="xzoom-gallery" width="80" src="eeg-images/headband/headband2.webp" title="The description goes here">
+                                    </a>
+                                      
+                                    <a href="eeg-images/headband/headband3.webp">
+                                      <img class="xzoom-gallery" width="80" src="eeg-images/headband/headband3.webp" title="The description goes here">
+                                    </a>
+                                      
+                                    
+                                  </div>
+                                </div>        
+                              </div>
+                              <div class="large-7 column"></div>
+                            </div>
+                            </section>
+                            <!-- default end -->
+                        </div>
+                        <div class="col-sm-6 get-in">
+                            <h3 class="ms-3 me-3">Ten Brain Research Headband</h3>
+                            <h5 class="ms-3 me-3"> 6 channel EEG headset for brain training and neurofeedback at home</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <!--product information end-->
+
+            <!--product description-->
+            <div class="row mt-4">
+                <h3><p style="text-align: center;"><b>Product Description</b></p></h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="row product-row">
+                        <article class="ootb-tabcordion">
+                            <div class="ootb-tabcordion--tabs" role="tablist" aria-label="TabCordion">
+                            <button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab1-tab" id="tab1">About Ten Brain Research Headband</button>
+                            <button class="tab" role="tab" aria-selected="false" aria-controls="tab2-tab" id="tab2" tabindex="-1">Technical Specification</button>
+                            <button class="tab" role="tab" aria-selected="false" aria-controls="tab3-tab" id="tab3" tabindex="-1">Features Of The Headband</button>
+                            </div>
+                            <section id="tab1-tab" class="ootb-tabcordion--entry is-active" data-title="Tab 1 with big text" tabindex="0" role="tabpanel" aria-labelledby="tab1">
+                                <div class="ootb-tabcordion--entry-container">
+                                    <div class="ootb-tabcordion--entry-content">
+                                        <p>Neuphony Headband is a neurofeedback-based wearable brain device (EEG Headband) that captures key mind parameters and allows users to know their stress and external focus scores. The device has 8 sensors - 6 signal and 2 reference distributed in the brain's parietal, frontal & temporal lobes. These are the polymer sensors that are conducive in nature. Cognitive States To Measure:
+                                            <ol>1.Stress Vs Calm</ol>
+                                            <ol>2.Mood Analysis</ol>
+                                            <ol>3.External Focus Vs Distractions</ol>
+                                            <ol>4.PDR (Posterior Dominant Rhythm)</ol>
+                                        </p>                                        
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="tab2-tab" class="ootb-tabcordion--entry" data-title="Tab 2 with big text" tabindex="-1" role="tabpanel" aria-labelledby="tab2">
+                                <div class="ootb-tabcordion--entry-container">
+                                    <div class="ootb-tabcordion--entry-content">
+                                    <p><table class="table table-dark">
+                                        <tr>
+                                            <th>Parameter</th>
+                                            <th>Value</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Sensor Count</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Resolution</td>
+                                            <td>24 bits per channel</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dynamic Range</td>
+                                            <td>375 mV (pp)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Motion Sensor</td>
+                                            <td>3x accelerometer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Battery Life</td>
+                                            <td>Up to 8 hours</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sample Rate</td>
+                                            <td>250 SPS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sensor Locations</td>
+                                            <td>Fp1, Fp2, F3, F4, Fz, T3, T4, Pz</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LSB Resolution</td>
+                                            <td>22.35 nVolts (24 bits mode)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sensor Technology</td>
+                                            <td>Dry sensors: polycarbonate conductive passive electrodes with Ag/AgCl coating</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sensor Technology</td>
+                                            <td>CMS/DRL references at T3/T4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Frequency Response</td>
+                                            <td>1 – 45 Hz</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Connectivity</td>
+                                            <td>Bluetooth® Low Energy 4.2, USB Type-C (with Extender)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Supported Platforms</td>
+                                            <td>Windows 10 (64-bit) v1607+, Mac OSX 10.13 and higher, iOS 11 or above, Android 5.0 Lollipop or above</td>
+                                        </tr>
+                                    </table>
+                                    </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="tab3-tab" class="ootb-tabcordion--entry" data-title="Tab 3 with big text" tabindex="-1" role="tabpanel" aria-labelledby="tab3">
+                                <div class="ootb-tabcordion--entry-container">
+                                    <div class="ootb-tabcordion--entry-content">
+                                    <p>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="eeg-images/features/feature1.webp" style="width:50px; height:50px; margin-left: 70px;">
+                                                <p>6 dry EEG sensors covering three Brain lobes</p>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <img src="eeg-images/features/feature2.webp" alt="Home" class="" style="width:50px; height:50px; margin-left: 70px;">
+                                                <p>Experience Neurofeedback at Home</p>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <img src="eeg-images/features/feature3.webp" alt="Bluetooth" class="" style="width:50px; height:50px; margin-left: 70px;">
+                                                <p>Wireless connectivity via Bluetooth</p>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <img src="eeg-images/features/feature4.webp" alt="hardware" class="" style="width:50px; height:50px; margin-left: 70px;">
+                                                <p>Sleek design and high quality hardware</p>
+                                            </div>
+                                        </div>
+                                    </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <!--end product description-->
+
+            <!--Neurofeedback training and research-->
+            <div class="row mt-4">  
+                <h3><p style="text-align: center;"><b>At Home Neurofeedback training and research</b></p></h3>
+                <h5><p style="text-align: center;">Use the Ten Brain Research headband with the mobile and desktop applications for comprehensive brain training, neurofeedback and cognitive insights</p></h5>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-6" >
+                            <div class="card training-research">
+                                <div class="card-body">
+                                  <h5 class="card-title mt-3" style="text-align: center; font-size: x-large;">Ten Brain Research Mobile Application</h5>
+                                  <p style="text-align: center;"><a href="#" class="btn btn-dark mt-3" style="border-radius: 17px; border: 2px #fff solid;">Explore</a></p>
+                                  <div class="clearfix"></div>
+                                  <p style="text-align: center;"><img src="eeg-images/application1.webp" class="mt-4" width="100%"></p> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 training-main">
+                            <div class="card training-research">
+                                <div class="card-body">
+                                  <h5 class="card-title mt-3" style="text-align: center; font-size: x-large;">Ten Brain Research Desktop Application</h5>
+                                  <p style="text-align: center;"><a href="#" class="btn btn-dark mt-3" style="border-radius: 17px; border: 2px #fff solid;">Explore</a></p>
+                                  <div class="clearfix"></div>
+                                  <p style="text-align: center; margin-top: 35%;"><img src="eeg-images/application2.webp" class="mt-4" width="100%"></p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <!--end Neurofeedback training and research-->
+
+
+            <!--As seen on-->
+            <!-- <div class="row mt-5">
+              <h3><p style="text-align: center;"><b>As Seen On</b></p></h3>
+              <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="row ms-2 me-2">
+                      <div class="slider">
+                        <div class="slide-track">
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/aaj-tak.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/betterindia.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/forbes.webp" height="100" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/google.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/lallantop.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/m-india.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/shorttankindia.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/aaj-tak.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/betterindia.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/forbes.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/google.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/lallantop.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/m-india.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/as seen on/shorttankindia.webp" height="125" width="250" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>            
+            </div> -->
+            <!--end as seen on-->
+
+            <!--Master your mind-->
+            <div class="row mt-4">
+                <h3><p style="text-align: center;"><b>Master your mind with EEG</b></p></h3>
+                <h5><p style="text-align: center;">Personalize your brain training, receive neurological feedback, and track your mood with Neuphony EEG headband</p></h5>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="row" style="margin-right: 40px;">
+                        <!-- <div class="card-deck"> -->
+                          <div class="col-sm-4 ms-4 card-design-first">
+                            <div class="card mt-3 card-design-card">
+                              <img class="card-img-top" src="eeg-images/master/1.webp" alt="Card image cap" width="auto" >
+                              <div class="card-body">
+                                <h5 class="card-title">Play Brain Training Games</h5>
+                                <p class="card-text">Use Neuphony Headband to Monitor your focus, calm and other scores while you play brain training games</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 ms-4 card-design-first">
+                            <div class="card mt-3 card-design-card">
+                              <img class="card-img-top" src="eeg-images/master/performance.webp" alt="Card image cap" width="auto" >
+                              <div class="card-body">
+                                <h5 class="card-title">Workout</h5>
+                                <p class="card-text">Track your mental strength and performance to train your brain as much as you train your body.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 ms-4 card-design-first">
+                            <div class="card mt-3 card-design-card">
+                              <img class="card-img-top" src="eeg-images/master/Read.webp" alt="Card image cap" width="auto" >
+                              <div class="card-body">
+                                <h5 class="card-title">Read A Book</h5>
+                                <p class="card-text">Read a book, novel, blog or any articles to measure your focus, attention span etc. and train your brain for better results every time.</p>
+                              </div>
+                            </div>
+                          </div>
+                    <!-- </div> 
+                    <div class="row" style="margin-right: 40px;">   -->
+                      <div class="col-sm-4 ms-4 card-design-first">
+                        <div class="card mt-3 card-design-card">
+                          <img class="card-img-top" src="eeg-images/master/techniques.webp" alt="Card image cap" width="auto" >
+                          <div class="card-body">
+                            <h5 class="card-title">Deep Breathing</h5>
+                            <p class="card-text">Try deep breathing techniques with Neuphony to measure and keep a track of your brain waves data which helps you define which techniques benefits you more.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 ms-4 card-design-first">
+                        <div class="card mt-3 card-design-card">
+                          <img class="card-img-top" src="eeg-images/master/brain.webp" alt="Card image cap" width="auto" >
+                          <div class="card-body">
+                            <h5 class="card-title">Practice Yoga</h5>
+                            <p class="card-text">Do a Pre-Yoga and Post-Yoga analysis or track your real-time brain data while you perform different asanas.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 ms-4 card-design-first">
+                        <div class="card mt-3 card-design-card">
+                          <img class="card-img-top" src="eeg-images/master/Meditation.webp" alt="Card image cap" width="auto" >
+                          <div class="card-body">
+                            <h5 class="card-title">Meditate</h5>
+                            <p class="card-text">Experience Meditation like never before with Neuphony and track how any meditation impacts your brain states.</p>
+                          </div>
+                        </div>
+                      </div>
+                
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            <!--end Master your mind-->
+
+            <!--youtube video-->
+            <!-- <div class="row mt-5">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-8">
+                <div class="row">
+                  <div class="youtube-video">
+                  <iframe width="1280" height="675" src="https://www.youtube.com/embed/fLtSL_z_pEE" title="Best Brain Devices for 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                </div>
+              </div>
+              <div class="col-sm-2"></div>
+            </div> -->
+            <!--end youtube video-->
+
+            <!--trusted by-->
+            <!-- <div class="row mt-4">
+              <h3><p style="text-align: center;"><b>Trusted By</b></p></h3>
+              <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="row ms-2 me-2">
+                      <div class="slider">
+                        <div class="slide-track">
+                          <div class="slide">
+                            <img src="eeg-images/Trusted By/government-college-of-yoga.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/Trusted By/institute-of-technology.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/Trusted By/national-institute-of-mental-health.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/Trusted By/neuro-meditation-institute.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/Trusted By/sri-sai-institute-of-advance-research.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/Trusted By/government-college-of-yoga.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/Trusted By/institute-of-technology.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/Trusted By/national-institute-of-mental-health.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/Trusted By/neuro-meditation-institute.webp" height="125" width="250" alt="" />
+                          </div>
+                          <div class="slide">
+                            <img src="eeg-images/Trusted By/sri-sai-institute-of-advance-research.webp" height="125" width="250" alt="" />
+                          </div>                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>            
+            </div> -->
+            <!--end trusted by-->
+
+            <!--Media by india -->
+            <div class="row mt-4">
+              <h3><p style="text-align: center;"><b>Made in India, Loved by the World</b></p></h3>
+              <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="row">
+                      <div class="slideshow-container">
+
+                        <div class="mySlides fade ms-3 me-3">
+                          <p style="text-align: center;color: #fff; background-color:#000"  class="">
+                            This is incredible! This is a whole next level! What a good meditations I have heard and experienced!! So far! This is what an EEG device deserves! This opens possibility to create a next level in measurement of the EEG Because I have seen some faults during the regular meditations.                          
+                              <br>
+                              <p  style="text-align: center;color: #fff; background-color:#000">Nick Van</p>
+                              <p  style="text-align: center;color: #fff; background-color:#000"><b>Founder, Meditator & Entrepreneur</b></p>
+                          </p>
+                          <!-- <div class="text">Caption Text</div> -->
+                        </div>
+                        
+                        <div class="mySlides fade ms-3 me-3">
+                          <p style="text-align: center;color: #fff; background-color:#000"  class="">
+                            To begin with, the neuphony device seems pretty cool to me. I still remember trying it on for the first time and having mutiple questions about how it’s going to feel like, kept on wondering how the device can measure my stress level, will I feel any sensations or discomfort and so on. But to my surprise it was pretty awesome. The device was not at all complicated. It felt like a head gear and was super easy to wear. The only disadvantage about the device is that after sometime it becomes too heavy on your head ad a bit pokey too.
+                              <br>
+                              <p  style="text-align: center;color: #fff; background-color:#000">Nikita Patel</p>
+                              <p  style="text-align: center;color: #fff; background-color:#000"><b>Fashion Influencer</b></p>
+                          </p>
+                          <!-- <div class="text">Caption Text</div> -->
+                        </div><div class="mySlides fade ms-3 me-3">
+                          <p style="text-align: center;color: #fff; background-color:#000"  class="">
+                            Brain activity was monitored during one of my meditation sessions copy. A very good initiative by team Neuphony. I have never had such an amazing experience where my brain activity was monitored during one of my meditation sessions. The device that the team is working on is a very novice idea that will help people monitor their brain waves at home with ease.
+                            <br>
+                              <p  style="text-align: center;color: #fff; background-color:#000">Trisha Behl</p>
+                              <p  style="text-align: center;color: #fff; background-color:#000"><b>Communication Specialist</b></p>
+                          </p>
+                          <!-- <div class="text">Caption Text</div> -->
+                        </div><div class="mySlides fade ms-3 me-3">
+                          <p style="text-align: center;color: #fff; background-color:#000"  class="">
+                            It was an amazing experience overall, using a headband does not affect your meditation experience it just helps your realize how you were truly involved in meditation, after a few minutes you forget about the headband it is that comfortable. Normal meditation and guided meditation with Neuphony and Level are slightly different as they help you to focus and calm your mind easily.
+                            <br>
+                              <p  style="text-align: center;color: #fff; background-color:#000">Kunal Rajaram</p>
+                              <p  style="text-align: center;color: #fff; background-color:#000"><b>Student & Meditator</b></p>
+                          </p>
+                          <!-- <div class="text">Caption Text</div> -->
+                        </div>
+                        <div class="mySlides fade ms-3 me-3">
+                          <p style="text-align: center;color: #fff; background-color:#000"  class="">
+                              I’ve been into meditation for 15 years now and thought that I was doing a more or less good job of it. But I never really felt completely relaxed during my meditations and this got confirmed with Neuphony that mindfulness meditation is definitely the meditation that’s more suited to my brain waves
+                              <br>
+                              <p  style="text-align: center;color: #fff; background-color:#000">Susan Lemke</p>
+                              <p  style="text-align: center;color: #fff; background-color:#000"><b>15+ years Experienced Meditator</b></p>
+                          </p>
+                        </div>
+                        <div class="mySlides fade ms-3 me-3">
+                          <p style="text-align: center;color: #fff; background-color:#000"  class="">
+                            I attended Neuphony's meditation bootcamp & used their product which is brain analysing device through EEG in upgraded level without wires which is great. In normal meditation we are not able to conclude that how much focused we are but with Neuphony's headband and its app where it has a feature of music sound which increase when we are focused and decrease when we are not helps a lot and that's the best feature I can say
+                              <br>
+                              <p  style="text-align: center;color: #fff; background-color:#000">Chaitrali Shah</p>
+                              <p  style="text-align: center;color: #fff; background-color:#000"><b>Student & Meditator</b></p>
+                          </p>
+                        </div>
+                        <div class="mySlides fade ms-3 me-3">
+                          <p style="text-align: center;color: #fff; background-color:#000"  class="">
+                            My experience with the device has been great. I love the concept of the device, didn't think it would be so efficient to actually measure your brain activity. The device is compact, easy and comfortable. It keeps us motivated to improve ourselves by adopting new habits. Its a very cool and exciting device. Thank you for the opportunity glad to have been a part of it
+                              <br>
+                              <p  style="text-align: center;color: #fff; background-color:#000">Pooja Chhedda</p>
+                              <p  style="text-align: center;color: #fff; background-color:#000"><b>Student & Meditator</b></p>
+                          </p>
+                        </div>
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                        </div>
+                    </div>
+                </div>
+              <div class="col-sm-2"></div>
+            </div>
+            <!--end media by india-->
+
+
+            <!--Get In Touch-->
+            <div class="row mt-4  ms-3 me-3">
+              <h5><p style="text-align: center;">Get In Touch</p></h5>
+              <h2><p style="text-align: center;"><b>Get in touch with our team to see how Ten Brain Research can help you</b></p></h2>
+              <h6><p style="text-align: center;"><b>Get in touch with our team to see how Ten Brain Research can revolutionize interaction with technology</b></p></h6>
+              <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <img src="eeg-images/demo.webp" width="600" class="get-in-touch-img">
+                      </div>
+                      <div class="col-sm-6 get-in">
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1" class="label-text">Your Name</label>
+                            <input type="text" class="form-control text-form" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
+                          </div>
+                          <div class="form-group mt-3">
+                            <label for="exampleInputEmail1" class="label-text">Email ID</label>
+                            <input type="email" class="form-control text-form" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email ID">
+                          </div>
+                          <div class="form-group mt-3">
+                            <label for="exampleInputEmail1" class="label-text">Phone No</label>
+                            <input type="number" class="form-control text-form" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Phone No">
+                          </div>
+                          <div class="form-group mt-3">
+                            <label for="exampleInputEmail1" class="label-text">Country</label>
+                            <input type="text" class="form-control text-form" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Country">
+                          </div>
+                          <div class="form-group mt-3">
+                            <label for="exampleInputEmail1" class="label-text">Your Message</label>
+                            <input type="text" class="form-control text-form" size="30" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your message">
+                          </div>
+                          
+                          <button type="submit" class="btn btn-warning mt-3 submit-btn">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!--end Get in touch-->
+
+            <!--Related Products-->
+            <div class="row mt-4">
+              <h5><p style="text-align: center;">Related Products</p></h5>
+              <h2><p style="text-align: center;"><b>Embark on a journey of Brain Exploration with us</b></p></h2>
+              <div class="col-sm-1"></div>
+                <div class="col-sm-9">
+                    <div class="row">
+                      <div class="wrapper">
+                        <div class="my-slider">
+                          <div class="card card-related-products" style="height: 100%; border-radius: 10%; color: #fff;;">
+                            <img class="card-img-top" src="eeg-images/relaed products/NeuphonyFlexCap.webp" alt="Card image cap"  style="border-radius: 25px; margin-left: 10px; padding-right: 25px;">
+                            <div class="card-body">
+                              <h4 class="card-title" style="text-align: center;">Neuphony Flex Cap</h4>
+                              <p class="card-text" style="text-align: center;">8 – Channel Wireless and Dry EEG Headset. Movable Electrodes and compatible with Neuphony Desktop Application</p>
+                            </div>
+                          </div>
+                          <div class="card card-related-products" style="height: 100%; border-radius: 10%; color: #fff;;">
+                            <img class="card-img-top" src="eeg-images/relaed products/NeuphonyEXGSynapse.webp" alt="Card image cap"  style="border-radius: 25px; margin-left: 10px; padding-right: 25px;">
+                            <div class="card-body">
+                              <h4 class="card-title" style="text-align: center;">Neuphony EXG Synapse</h4>
+                              <p class="card-text" style="text-align: center;">DIY Neuroscience Kit. A BCI/HCI ready Kit with comprehensive biopotential signal compatibility</p>
+                            </div>
+                          </div>
+                          <div class="card card-related-products" style="height: 100%; border-radius: 10%; color: #fff;;">
+                            <img class="card-img-top" src="eeg-images/relaed products/NeuphonyDesktopApp.webp" alt="Card image cap"  style="border-radius: 25px; margin-left: 10px; padding-right: 25px;">
+                            <div class="card-body">
+                              <h4 class="card-title" style="text-align: center;">Neuphony Desktop App</h4>
+                              <p class="card-text" style="text-align: center;">One Stop Solution for Real-time EEG Data, Band Powers and Cognitive Insights (Connection via Cable OR Bluetooth dongle)</p>
+                            </div>
+                          </div>
+                          <div class="card card-related-products" style="height: 100%; border-radius: 10%; color: #fff;;">
+                            <img class="card-img-top" src="eeg-images/relaed products/NeuphonyMobileApplication.webp" alt="Card image cap"  style="border-radius: 25px; margin-left: 10px; padding-right: 25px;">
+                            <div class="card-body">
+                              <h4 class="card-title" style="text-align: center;">Neuphony Mobile Application</h4>
+                              <p class="card-text" style="text-align: center;">Brain training &amp; Meditation App . Guided and Music Meditations backed by Neuroscience with Cognitive Insights</p>
+                            </div>
+                          </div>
+                          <div class="card card-related-products" style="height: 100%; border-radius: 10%; color: #fff;;">
+                            <img class="card-img-top" src="eeg-images/relaed products/NeuphonyMobileApplication.webp" alt="Card image cap"  style="border-radius: 25px; margin-left: 10px; padding-right: 25px;">
+                            <div class="card-body">
+                              <h4 class="card-title" style="text-align: center;">Neuphony Headband</h4>
+                              <p class="card-text" style="text-align: center;">6 – Channel Wireless and Dry EEG Headset. (Compatible with Neuphony Mobile Application and Neuphony Desktop Application)</p>
+                            </div>
+                          </div>
+                          
+                                                
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <!--end related Products-->
+
+        </div>
+    </div><!--end container-fluid-->
+
+    <!--main-->
+
+    <!-- Bootstrap Bundle JS -->
+     <!-- <script src="js/main.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/xzoom/dist/xzoom.min.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.1.1.js"></script> -->
+    
+
+    <script>
+
+(function ($) {
+    $(document).ready(function() {
+        $('.xzoom, .xzoom-gallery').xzoom({zoomWidth: 400, title: true, tint: '#333', Xoffset: 15});
+        $('.xzoom2, .xzoom-gallery2').xzoom({position: '#xzoom2-id', tint: '#ffa200'});
+        $('.xzoom3, .xzoom-gallery3').xzoom({position: 'lens', lensShape: 'circle', sourceClass: 'xzoom-hidden'});
+        $('.xzoom4, .xzoom-gallery4').xzoom({tint: '#006699', Xoffset: 15});
+        $('.xzoom5, .xzoom-gallery5').xzoom({tint: '#006699', Xoffset: 15});
+
+        //Integration with hammer.js
+        var isTouchSupported = 'ontouchstart' in window;
+
+        if (isTouchSupported) {
+            //If touch device
+            $('.xzoom, .xzoom2, .xzoom3, .xzoom4, .xzoom5').each(function(){
+                var xzoom = $(this).data('xzoom');
+                xzoom.eventunbind();
+            });
+            
+            $('.xzoom, .xzoom2, .xzoom3').each(function() {
+                var xzoom = $(this).data('xzoom');
+                $(this).hammer().on("tap", function(event) {
+                    event.pageX = event.gesture.center.pageX;
+                    event.pageY = event.gesture.center.pageY;
+                    var s = 1, ls;
+    
+                    xzoom.eventmove = function(element) {
+                        element.hammer().on('drag', function(event) {
+                            event.pageX = event.gesture.center.pageX;
+                            event.pageY = event.gesture.center.pageY;
+                            xzoom.movezoom(event);
+                            event.gesture.preventDefault();
+                        });
+                    }
+    
+                    xzoom.eventleave = function(element) {
+                        element.hammer().on('tap', function(event) {
+                            xzoom.closezoom();
+                        });
+                    }
+                    xzoom.openzoom(event);
+                });
+            });
+
+        $('.xzoom4').each(function() {
+            var xzoom = $(this).data('xzoom');
+            $(this).hammer().on("tap", function(event) {
+                event.pageX = event.gesture.center.pageX;
+                event.pageY = event.gesture.center.pageY;
+                var s = 1, ls;
+
+                xzoom.eventmove = function(element) {
+                    element.hammer().on('drag', function(event) {
+                        event.pageX = event.gesture.center.pageX;
+                        event.pageY = event.gesture.center.pageY;
+                        xzoom.movezoom(event);
+                        event.gesture.preventDefault();
+                    });
+                }
+
+                var counter = 0;
+                xzoom.eventclick = function(element) {
+                    element.hammer().on('tap', function() {
+                        counter++;
+                        if (counter == 1) setTimeout(openfancy,300);
+                        event.gesture.preventDefault();
+                    });
+                }
+
+                function openfancy() {
+                    if (counter == 2) {
+                        xzoom.closezoom();
+                        $.fancybox.open(xzoom.gallery().cgallery);
+                    } else {
+                        xzoom.closezoom();
+                    }
+                    counter = 0;
+                }
+            xzoom.openzoom(event);
+            });
+        });
+        
+        $('.xzoom5').each(function() {
+            var xzoom = $(this).data('xzoom');
+            $(this).hammer().on("tap", function(event) {
+                event.pageX = event.gesture.center.pageX;
+                event.pageY = event.gesture.center.pageY;
+                var s = 1, ls;
+
+                xzoom.eventmove = function(element) {
+                    element.hammer().on('drag', function(event) {
+                        event.pageX = event.gesture.center.pageX;
+                        event.pageY = event.gesture.center.pageY;
+                        xzoom.movezoom(event);
+                        event.gesture.preventDefault();
+                    });
+                }
+
+                var counter = 0;
+                xzoom.eventclick = function(element) {
+                    element.hammer().on('tap', function() {
+                        counter++;
+                        if (counter == 1) setTimeout(openmagnific,300);
+                        event.gesture.preventDefault();
+                    });
+                }
+
+                function openmagnific() {
+                    if (counter == 2) {
+                        xzoom.closezoom();
+                        var gallery = xzoom.gallery().cgallery;
+                        var i, images = new Array();
+                        for (i in gallery) {
+                            images[i] = {src: gallery[i]};
+                        }
+                        $.magnificPopup.open({items: images, type:'image', gallery: {enabled: true}});
+                    } else {
+                        xzoom.closezoom();
+                    }
+                    counter = 0;
+                }
+                xzoom.openzoom(event);
+            });
+        });
+
+        } else {
+            //If not touch device
+
+            //Integration with fancybox plugin
+            $('#xzoom-fancy').bind('click', function(event) {
+                var xzoom = $(this).data('xzoom');
+                xzoom.closezoom();
+                $.fancybox.open(xzoom.gallery().cgallery, {padding: 0, helpers: {overlay: {locked: false}}});
+                event.preventDefault();
+            });
+           
+            //Integration with magnific popup plugin
+            $('#xzoom-magnific').bind('click', function(event) {
+                var xzoom = $(this).data('xzoom');
+                xzoom.closezoom();
+                var gallery = xzoom.gallery().cgallery;
+                var i, images = new Array();
+                for (i in gallery) {
+                    images[i] = {src: gallery[i]};
+                }
+                $.magnificPopup.open({items: images, type:'image', gallery: {enabled: true}});
+                event.preventDefault();
+            });
+        }
+    });
+})(jQuery);
+
+
+    $(document).ready(function(){
+      $('.my-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        speed: 300,
+        infinite: true,
+        autoplaySpeed: 5000,
+        autoplay: true,
+        responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+      });
+    });
+
+
+
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  // slides[slideIndex-1].style.color = "white";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+        (function () {
+    "use strict";
+  
+    const keyboardSupport = function (container, hasTabs) {
+      const tablist = container.querySelectorAll('[role="tablist"]')[0];
+      let tabs;
+      let panels;
+  
+      const generateArrays = function () {
+        panels = container.querySelectorAll('[role="tabpanel"]');
+        tabs = container.querySelectorAll('[role="tab"]');
+      };
+  
+      generateArrays();
+  
+      // For easy reference
+      const keys = {
+        end: 35,
+        home: 36,
+        left: 37,
+        up: 38,
+        right: 39,
+        down: 40,
+        delete: 46,
+        enter: 13,
+        space: 32
+      };
+  
+      // Add or subtract depending on key pressed
+      const direction = {
+        37: -1,
+        38: -1,
+        39: 1,
+        40: 1
+      };
+  
+      // Deactivate all tabs and tab panels
+      const deactivateTabs = function () {
+        for (let t = 0; t < tabs.length; t++) {
+          tabs[t].setAttribute("tabindex", "-1");
+          tabs[t].setAttribute("aria-selected", "false");
+        }
+      };
+  
+      // Activates any given tab panel
+      const activateTab = function (tab, setFocus) {
+        setFocus = setFocus || true;
+        // Deactivate all other tabs
+        deactivateTabs();
+  
+        // Remove tabindex attribute
+        tab.removeAttribute("tabindex");
+  
+        // Set the tab as selected
+        tab.setAttribute("aria-selected", "true");
+  
+        // Set focus when required
+        if (setFocus) {
+          tab.focus();
+        }
+      };
+  
+      const triggerTabClick = function (e) {
+        const clickedId = e.target.getAttribute("id");
+        if (clickedId) {
+          const clickedTab = container.querySelector(
+            '[aria-controls="' + clickedId + '"]'
+          );
+          clickedTab.click();
+          document.getElementById(clickedId).scrollIntoView({
+            behavior: "smooth"
+          });
+        }
+      };
+  
+      const accordionClickEventListener = function (event) {
+        triggerTabClick(event);
+      };
+  
+      // When a tab is clicked, activateTab is fired to activate it
+      const clickEventListener = function (event) {
+        const tab = event.target;
+        activateTab(tab, false);
+      };
+  
+      // Make a guess
+      const focusFirstTab = function () {
+        const target = hasTabs ? tabs : panels;
+        target[0].focus();
+      };
+  
+      // Make a guess
+      const focusLastTab = function () {
+        const target = hasTabs ? tabs : panels;
+        target[target.length - 1].focus();
+      };
+  
+      // Either focus the next, previous, first, or last tab
+      // depending on key pressed
+      const switchTabOnArrowPress = function (event) {
+        const pressed = event.keyCode;
+  
+        if (direction[pressed]) {
+          const target = event.target;
+          const targetElems = hasTabs ? tabs : panels;
+          if (target.index !== undefined) {
+            if (targetElems[target.index + direction[pressed]]) {
+              targetElems[target.index + direction[pressed]].focus();
+            } else if (pressed === keys.left || pressed === keys.up) {
+              focusLastTab();
+            } else if (pressed === keys.right || pressed == keys.down) {
+              focusFirstTab();
+            }
+          }
+        }
+      };
+  
+      // When a tablist's aria-orientation is set to vertical,
+      // only up and down arrow should function.
+      // In all other cases only left and right arrow function.
+      const determineOrientation = function (event) {
+        const key = event.keyCode;
+        const vertical = tablist
+          ? tablist.getAttribute("aria-orientation") === "vertical"
+          : null;
+        let proceed = false;
+  
+        if (vertical || !hasTabs) {
+          if (key === keys.up || key === keys.down) {
+            event.preventDefault();
+            proceed = true;
+          }
+        } else {
+          if (key === keys.left || key === keys.right) {
+            proceed = true;
+          }
+        }
+  
+        if (proceed) {
+          switchTabOnArrowPress(event);
+        }
+      };
+  
+      // Handle keydown on tabs
+      const keydownEventListener = function (event) {
+        const key = event.keyCode;
+        switch (key) {
+          case keys.end:
+            event.preventDefault();
+            // Activate last tab
+            focusLastTab();
+            break;
+          case keys.home:
+            event.preventDefault();
+            // Activate first tab
+            focusFirstTab();
+            break;
+  
+          // Up and down are in keydown
+          // because we need to prevent page scroll >:)
+          case keys.up:
+          case keys.down:
+            determineOrientation(event);
+            break;
+        }
+      };
+  
+      // Handle keyup on tabs
+      const keyupEventListener = function (event) {
+        const key = event.keyCode;
+        switch (key) {
+          case keys.left:
+          case keys.right:
+            determineOrientation(event);
+            break;
+          case keys.enter:
+          case keys.space:
+            if (hasTabs) {
+              activateTab(event.target);
+            } else {
+              triggerTabClick(event);
+            }
+            break;
+        }
+      };
+  
+      const addListeners = function (index) {
+        const target = hasTabs ? tabs[index] : panels[index];
+        tabs[index].addEventListener("click", clickEventListener);
+        if (target) {
+          if (!hasTabs) {
+            target.addEventListener("click", accordionClickEventListener);
+          }
+          target.addEventListener("keydown", keydownEventListener);
+          target.addEventListener("keyup", keyupEventListener);
+          // Build an array with all tabs (<button>s) in it
+          target.index = index;
+        }
+      };
+  
+      // Bind listeners
+      for (let i = 0; i < tabs.length; ++i) {
+        addListeners(i);
+      }
+  
+      // Accordion mode
+      if (!hasTabs) {
+        for (const panel of panels) {
+          panel.onclick = function (e) {
+            triggerTabClick(e);
+          };
+        }
+      }
+    };
+  
+    const toggleClass = function (otherElems, thisELem, className = "is-active") {
+      for (const otherElem of otherElems) {
+        otherElem.classList.remove(className);
+      }
+      thisELem.classList.add(className);
+    };
+  
+    const toggleVerticalTabs = function (tabContainer, tabs, items, item) {
+      item.onclick = function (e) {
+        const currId = item.getAttribute("id");
+        const tab = tabContainer.querySelector(
+          '.ootb-tabcordion--tabs [aria-controls="' + currId + '"]'
+        );
+        toggleClass(tabs, tab);
+        toggleClass(items, item);
+      };
+    };
+  
+    const toggleTabs = function (tabContainer) {
+      const tabs = tabContainer.querySelectorAll(".ootb-tabcordion--tabs .tab");
+      const items = tabContainer.querySelectorAll(".ootb-tabcordion--entry");
+      for (const tab of tabs) {
+        tab.onclick = function () {
+          const target = tab.getAttribute("aria-controls");
+          const content = document.getElementById(target);
+          toggleClass(tabs, tab);
+          toggleClass(items, content);
+        };
+      }
+      for (const item of items) {
+        toggleVerticalTabs(tabContainer, tabs, items, item);
+      }
+    };
+  
+    const hasTabs = function (container) {
+      return container.classList.contains("has-tabs");
+    };
+  
+    const modeSwitcher = function (tabContainer, containerWidth) {
+      const tabs = tabContainer.querySelectorAll(".tab");
+      const container = tabs[0].closest(".ootb-tabcordion");
+      let totalW = 0;
+      for (const tab of tabs) {
+        totalW += tab.offsetWidth;
+      }
+      if (totalW >= containerWidth) {
+        container.classList.remove("has-tabs");
+      } else {
+        container.classList.add("has-tabs");
+      }
+      keyboardSupport(tabContainer, hasTabs(container));
+    };
+  
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        modeSwitcher(entry.target, entry.contentRect.width);
+      }
+    });
+  
+    const tabContainers = document.querySelectorAll(".ootb-tabcordion");
+    for (const tabContainer of tabContainers) {
+      const tabList = tabContainer.querySelector(".ootb-tabcordion--tabs");
+      resizeObserver.observe(tabList);
+      toggleTabs(tabContainer);
+      keyboardSupport(tabContainer, hasTabs(tabContainer));
+    }
+  })();
+  
+    </script>
+</body>
+</html>
